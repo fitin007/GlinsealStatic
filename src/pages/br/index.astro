@@ -8,7 +8,6 @@ import Contact from "./components/Contact.astro";
 import Footer from "./components/Footer.astro";
 import mockup1 from "../../img/celular-mockup.webp";
 import mockup2 from "../../img/celularmockup2.webp";
-import InfoRFID from "./components/InfoRFID.astro";
 ---
 
 <Layout title="Glinseal">
@@ -20,7 +19,7 @@ import InfoRFID from "./components/InfoRFID.astro";
     <div class="grey-bg">
       <Header />
 
-      <div  class="page-section p-110-cont">
+      <div id="about" class="page-section p-110-cont">
         <div class="container">
           <div class="row">
             <div class="col-md-5 pb-40">
@@ -38,7 +37,7 @@ import InfoRFID from "./components/InfoRFID.astro";
             <div class="col-md-7">
               <div class="row">
                 <div class="col-md-12 col-sm-12 pb-10">
-                  <div class="fes5-box wow fadeIn">g
+                  <div class="fes5-box wow fadeIn">
                     O denominador comum no comércio internacional é a
                     necessidade de informações oportunas e acionáveis sobre a
                     condição e a localização das mercadorias.
@@ -74,7 +73,100 @@ import InfoRFID from "./components/InfoRFID.astro";
 
       <Partners />
 
-      <InfoRFID />
+      <div class="page-section grey-light-bg clearfix">
+        <div class="fes7-img-cont col-md-6">
+          <div
+            class="fes7-img"
+            style="background-image: url(images/personarfid.png)"
+          >
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row info1-rfid">
+            <div class="col-md-9 col-md-offset-6 fes7-text-cont">
+              <h1
+                class="section-title"
+                style="border-left: white 2px solid; color: white"
+              >
+                O QUE É UM <span class="bold" style="color: white"
+                  >SELO RFID</span
+                >?
+              </h1>
+
+              <p class="mb-60" style="color: white">
+                É um lacre que combina o alto nível de segurança mecânica
+                oferecido pela ISO17712 com a segurança da transmissão
+                eletrônica de RFID UHF para uma identificação serial exclusiva
+                que é impossível de ser replicada.
+                <br />
+                <br />
+                 Graças à leitura de longo alcance, ele pode detectar
+                automaticamente quando um contêiner deseja ser removido de um
+                terminal sem autorização, tornando as operações de entrada/saída
+                mais rápidas, confiáveis, seguras e livres de erros humanos.
+                <br />
+                <br />
+                 A integridade dos selos (Manipulado / Não Manipulado) é
+                detectada imediatamente ao passar por um pórtico de RFID ou por
+                inspeção física (leitores RFID portáteis).
+              </p>
+            </div>
+
+            <div class="col-md-9 col-md-offset-6 fes7-text-cont">
+              <h1
+                class="section-title"
+                style="border-left: white 2px solid; color: white"
+              >
+                COMO FUNCIONA A
+                <span class="bold" style="color: white"> TECNOLOGIA RFID</span>?
+              </h1>
+
+              <p style="color: white">
+                As soluções de RFID incluem antenas de RFID, leitores de RFID
+                (transceptores) e etiquetas de RFID (etiquetas de RF).
+                Dependendo do tamanho do depósito e de sua configuração, pode
+                ser necessário instalar arcos de escaneamento ou portões de
+                RFID. Quando as mercadorias passam, a antena detecta a etiqueta
+                ou a etiqueta inteligente e envia um sinal ao leitor para
+                autenticar as informações contidas na etiqueta. O leitor, por
+                sua vez, envia as informações para o nosso sistema <span
+                  class="bold">GLINSEAL</span
+                >, onde os dados são atualizados imediatamente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="work-process-link" class="page-section">
+        <div class="container fes4-cont">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="mb-50">
+                <h2 class="section-title">
+                  O QUE É UM SELO <span class="bold">RFID DE 3 ESTADOS</span> DE
+                  ALTA SEGURANÇA?
+                </h2>
+              </div>
+              <p class="mb-50">
+                É um dispositivo que atende aos mais altos padrões de segurança
+                em todo o mundo, capaz de fornecer informações de <span
+                  class="bold">IDENTIFICAÇÃO RFID</span
+                >, independentemente de sua integridade ser <span class="bold"
+                  >MANIPULADA</span
+                > ou <span class="bold">NÃO MANIPULADA</span>, além da condição
+                de uso <span class="bold">ABERTA</span> ou <span class="bold"
+                  >FECHADA</span
+                >.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img src="/images/precintos3rfid.png" />
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="page-section video-ads-bg">
         <div class="container">
@@ -84,7 +176,7 @@ import InfoRFID from "./components/InfoRFID.astro";
         </div>
       </div>
 
-      <div id="about" class="page-section p-80-cont">
+      <div id="app-glinseal" class="page-section p-80-cont">
         <div class="container">
           <div class="row">
             <div class="col-md-8">
@@ -129,7 +221,7 @@ import InfoRFID from "./components/InfoRFID.astro";
               </div>
             </div>
 
-            <div class="col-md-4 fes9-img-cont clearfix margin-mobile">
+            <div class="col-md-4 fes9-img-cont clearfix">
               <div class="fes9-img-center clearfix">
                 <div class="fes9-img-center">
                   <Image
@@ -259,16 +351,6 @@ import InfoRFID from "./components/InfoRFID.astro";
   @media (min-width: 992px) {
     .info1-rfid {
       padding-left: 250px;
-    }
-  }
-
-  .margin-mobile {
-  }
-
-  @media (min-width: 481px) {
-    .margin-mobile {
-      margin-top: 100px;
-      margin-bottom: 100px;
     }
   }
 </style>
